@@ -68,5 +68,5 @@ ALTER TABLE dbo.Vehicle ADD CONSTRAINT SerialNumberTS CHECK (Model IN (N'Mersede
 ALTER TABLE dbo.Ticket ADD CONSTRAINT SerNumPassPassenger_check CHECK (SerNumPassportPass_ger LIKE '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]')
 ALTER TABLE dbo.Vehicle ADD CONSTRAINT Years_2000 CHECK (YearsOfIssue >= 2000)
 
-ALTER TABLE dbo.Driver ADD CONSTRAINT Full_driver_def DEFAULT (N'Петрушка А.А.') for FullName
+ALTER TABLE dbo.Driver ADD CONSTRAINT Full_driver_def DEFAULT (N'Petrushka A.A.') for FullName
 ALTER TABLE dbo.Schedule ADD CONSTRAINT TicketSold_all DEFAULT (30) for TicketSold
